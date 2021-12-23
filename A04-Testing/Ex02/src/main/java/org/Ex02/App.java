@@ -82,9 +82,9 @@ public class App
 		}
     	return price;
     }
-    public static boolean valid(Person p, int AI) {
+     public static boolean valid(Person p, int AI) {
     	boolean valid = false;
-    	if (((!p.isIll() && !p.isHasContact() && !p.isHasSymptoms()) || (p.isPassport() && !p.isIll())) && (!(p.getAge() > 65 && AI > 500) || p.getAge() <=65) ){
+    	if (((!p.isIll() && !p.isHasContact() && !p.isHasSymptoms()) || (p.isPassport() && !p.isIll())) && (!(p.getAge() > 65 && AI > 500)) ){
     		valid = true;
     	}
     	return valid;
